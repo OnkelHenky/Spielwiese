@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<template id="binput">
+    <style>
+        .outer {
+            border: 2px solid #000000;
+            border-radius: 1em;
+            width: 12em;
+            height: 7em;
+            text-align: center;
+        }
+
+        .outer b{
+            color: #fb8c00;
+        }
+    </style>
+    <div class="outer">
+        <div>
+            <b>I'm in the element's Shadow DOM, like a sir </b>
+        </div>
+        <div class="content">
+            <content></content>
+        </div>
+    </div>
+</template>
+
+<template id="cinput">
+    <style>
+        .outer {
+            border: 2px solid green;
+            border-radius: 1em;
+            width: 12em;
+            height: 7em;
+            text-align: center;
+        }
+
+        .outer b{
+            color: hotpink;
+        }
+
+    </style>
+    <div class="outer">
+        <div>
+            <b>I'm in the element's Shadow DOM, like a sir C Style </b>
+        </div>
+        <div class="content">
+            <content>
+                <!-- label for="username">username</label -->
+
+            </content>
+        </div>
+    </div>
+</template>
+
+<script type="text/javascript">
+
+
+
+        var mytestTemp = document.querySelector('link[href="mycomponent/mycom.html"]');
+        var _import = mytestTemp.import;
+
+
+
+
+
+        document.MyStuff = {};
+
+        var _myStuff = document.MyStuff;
+
+        var b_input_proto =  Object.create(HTMLElement.prototype, {
+            createdCallback: {
+                value: function () {
+                    var shadow = this.createShadowRoot();
+                    var template = _import.querySelector('#binput');
+                    var clone = document.importNode(template.content, true);
+                    _myStuff.shadow = shadow;
+                    shadow.appendChild(clone);
+                }
+            },
+            attachedCallback: {
+                value: function () {
+                    console.dir('@foo (A) = '+this.getAttribute('foo'));
+                }
+            },
+            updateClickHandlerComponent: {
+                value : function(S_nameOFListener) {
+
+                }
+            }
+        });
+
+
+        _myStuff.binput = document.registerElement('b-input', {
+            prototype: b_input_proto
+        });
+
+</script>
+</html>
+

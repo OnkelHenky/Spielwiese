@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <!-- setting a proper encoding -->
+    <meta charset="UTF-8">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Henka"/>
+
+    <!-- mobile related meta information -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <script type="text/javascript">
+        function bSort(arrayToSort){
+            var swapped = false;
+            for(var i = 0; (i < arrayToSort.length && !swapped); i++){
+                var swapped = false;
+                for(var j = 0 ; j < (arrayToSort.length - 1); j++){
+
+                    if(arrayToSort[j] > arrayToSort[j+1]){
+                       var akku = arrayToSort[j+1];
+                           arrayToSort[j+1] = arrayToSort[j];
+                           arrayToSort[j] = akku;
+                           swapped = true;
+
+                    }
+                }
+            }
+            console.log(arrayToSort);
+        }
+    </script>
+
+</head>
+<body onload="bSort(['f','a','z','h'])">
+
+
+</body>
+</html>

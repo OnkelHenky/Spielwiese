@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<template id="b-input">
+    <style>
+        .outer {
+            border: 2px solid #000000;
+            border-radius: 1em;
+            width: 12em;
+            height: 7em;
+            text-align: center;
+        }
+
+        .content{
+            color: #fb8c00;
+        }
+
+    </style>
+    <div class="outer">
+        <div>
+            <b>I'm in the element's Shadow DOM, like a sir </b>
+        </div>
+        <div class="content">
+            <content></content>
+        </div>
+    </div>
+</template>
+
+<template id="c-input">
+    <style>
+        .outer {
+            border: 2px solid #000000;
+            border-radius: 1em;
+            width: 12em;
+            height: 7em;
+            text-align: center;
+        }
+
+        .content{
+            color: #fb8c00;
+        }
+
+    </style>
+    <div class="outer">
+        <div>
+            <b>I'm in the element's Shadow DOM, like a sir </b>
+        </div>
+        <div class="content">
+            <content>
+                <!-- label for="username">username</label -->
+                <paper-input label="Name" floatingLabel></paper-input>
+            </content>
+        </div>
+    </div>
+</template>
+
+</body>
+
+<script type="text/javascript" src="mycom.js"></script>
+</html>

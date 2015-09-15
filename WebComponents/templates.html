@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<template id="nameTagTemplate">
+    <style>
+        .outer {
+            border: 2px solid brown;
+            border-radius: 1em;
+            background: red;
+            font-size: 20pt;
+            width: 12em;
+            height: 7em;
+            text-align: center;
+        }
+        .boilerplate {
+            color: white;
+            font-family: sans-serif;
+            padding: 0.5em;
+        }
+        .name {
+            color: black;
+            background: white;
+            font-family: "Marker Felt", cursive;
+            font-size: 45pt;
+            padding-top: 0.2em;
+        }
+    </style>
+    <div class="outer">
+        <div class="boilerplate">
+            Hi! My name is
+        </div>
+        <div class="name">
+            <content></content>
+        </div>
+    </div>
+</template>
+
+
+<template id="nameTagTemplate2">
+    <style>
+        .outer {
+            border: 2px solid pink;
+            border-radius: 1em;
+            background: lavender;
+            font-size: 20pt;
+            width: 12em;
+            height: 7em;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .name {
+            font-size: 45pt;
+            font-weight: normal;
+            margin-top: 0.8em;
+            padding-top: 0.2em;
+        }
+    </style>
+    <div class="outer">
+        <div class="name">
+            <content></content>
+        </div>
+        と申します。
+    </div>
+</template>
+
+</body>
+</html>

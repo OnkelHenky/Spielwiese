@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Web Components Testbed</title>
+    <link rel="import" href="templates.html">
+    <link href="mycomponent/mycom.html" rel="import">
+    <!-- script src="mycustomstuff.js" type="text/javascript"></script -->
+    <link href="bower_components/paper-input/paper-input.html" rel="import">
+    <script src="components.js" type="text/javascript"></script>
+
+</head>
+
+
+
+<body onload="makt()">
+    <button id="myButton"  onclick="machett()"> Click Me </button>
+    <button id="myButton2"  onclick="test()"> test  </button>
+
+    <label for="tf">Name:</label>
+    <input id="tf" type="text"/>
+
+    <button id="nameButto"  onclick="getName()"> Set Name</button>
+
+    <div id="nameTag"></div>
+
+    <!-- label for="username">username</label -->
+    <paper-input id="username" label="Name" floatingLabel></paper-input>
+
+    <br>
+
+    <b-input id="ide" foo="HalloWelt"></b-input>
+
+
+</body >
+</html>

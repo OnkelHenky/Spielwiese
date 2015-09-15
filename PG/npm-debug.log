@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '/Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris',
+1 verbose cli   '-g' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose cache add [ '/Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris',
+4 verbose cache add   null ]
+5 verbose cache add name=undefined spec="/Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris" args=["/Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: '/Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris',
+6 verbose parsed url   path: '/Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris',
+6 verbose parsed url   href: '/Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris' }
+7 silly lockFile 01a3b031-nt-JavaScript-Projekte-PinotGris /Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris
+8 verbose lock /Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris /Users/alex/.npm/01a3b031-nt-JavaScript-Projekte-PinotGris.lock
+9 verbose tar pack [ '/Users/alex/.npm/pinotgris/0.0.1/package.tgz',
+9 verbose tar pack   '/Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris' ]
+10 verbose tarball /Users/alex/.npm/pinotgris/0.0.1/package.tgz
+11 verbose folder /Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris
+12 info prepublish pinotgris@0.0.1
+13 silly lockFile 78282602-nt-JavaScript-Projekte-PinotGris tar:///Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris
+14 verbose lock tar:///Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris /Users/alex/.npm/78282602-nt-JavaScript-Projekte-PinotGris.lock
+15 silly lockFile e4577b96--npm-pinotgris-0-0-1-package-tgz tar:///Users/alex/.npm/pinotgris/0.0.1/package.tgz
+16 verbose lock tar:///Users/alex/.npm/pinotgris/0.0.1/package.tgz /Users/alex/.npm/e4577b96--npm-pinotgris-0-0-1-package-tgz.lock
+17 silly lockFile 78282602-nt-JavaScript-Projekte-PinotGris tar:///Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris
+18 silly lockFile 78282602-nt-JavaScript-Projekte-PinotGris tar:///Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris
+19 silly lockFile e4577b96--npm-pinotgris-0-0-1-package-tgz tar:///Users/alex/.npm/pinotgris/0.0.1/package.tgz
+20 silly lockFile e4577b96--npm-pinotgris-0-0-1-package-tgz tar:///Users/alex/.npm/pinotgris/0.0.1/package.tgz
+21 silly lockFile 50b84b28-alex-npm-pinotgris-0-0-1-package /Users/alex/.npm/pinotgris/0.0.1/package
+22 verbose lock /Users/alex/.npm/pinotgris/0.0.1/package /Users/alex/.npm/50b84b28-alex-npm-pinotgris-0-0-1-package.lock
+23 silly lockFile 50b84b28-alex-npm-pinotgris-0-0-1-package /Users/alex/.npm/pinotgris/0.0.1/package
+24 silly lockFile 50b84b28-alex-npm-pinotgris-0-0-1-package /Users/alex/.npm/pinotgris/0.0.1/package
+25 silly lockFile 01a3b031-nt-JavaScript-Projekte-PinotGris /Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris
+26 silly lockFile 01a3b031-nt-JavaScript-Projekte-PinotGris /Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris
+27 silly resolved [ { name: 'pinotgris',
+27 silly resolved     version: '0.0.1',
+27 silly resolved     description: 'Converter for SeleniumBuilder\'s JSON format into Merlot Blueprints ',
+27 silly resolved     author: { name: 'Alexander Henka,  Alexander.Henka@googlemail.com' },
+27 silly resolved     license: 'Apache 2.0',
+27 silly resolved     main: './core/index.js',
+27 silly resolved     keywords: [ 'selenium', 'merlot', 'converter', 'blueprint' ],
+27 silly resolved     dependencies: { 'cli-args': '^1.2.1', jsonfile: '^2.0.0' },
+27 silly resolved     readme: 'PinotGris\n=========\n\nConverter for SeleniumBuilder\'s JSON format into Merlot Blueprints \n\n\n*LICENSE*\n\nAll license information  can be found in the LICENSE file, or in any used third-party component.',
+27 silly resolved     readmeFilename: 'README.md',
+27 silly resolved     gitHead: '00882fc7721f6a030fa703012ec1e589b7621bcf',
+27 silly resolved     _id: 'pinotgris@0.0.1',
+27 silly resolved     scripts: {},
+27 silly resolved     _shasum: '7a7671ebd007be34d0fffba662efb7e8ba0fc43f',
+27 silly resolved     _from: '/Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris' } ]
+28 info install pinotgris@0.0.1 into /usr/local/lib
+29 info installOne pinotgris@0.0.1
+30 verbose lib/node_modules/pinotgris unbuild
+31 verbose tar unpack /Users/alex/.npm/pinotgris/0.0.1/package.tgz
+32 silly lockFile ed40cabe-local-lib-node-modules-pinotgris tar:///usr/local/lib/node_modules/pinotgris
+33 verbose lock tar:///usr/local/lib/node_modules/pinotgris /Users/alex/.npm/ed40cabe-local-lib-node-modules-pinotgris.lock
+34 silly lockFile e4577b96--npm-pinotgris-0-0-1-package-tgz tar:///Users/alex/.npm/pinotgris/0.0.1/package.tgz
+35 verbose lock tar:///Users/alex/.npm/pinotgris/0.0.1/package.tgz /Users/alex/.npm/e4577b96--npm-pinotgris-0-0-1-package-tgz.lock
+36 silly gunzTarPerm modes [ '755', '644' ]
+37 error Error: EACCES, mkdir '/usr/local/lib/node_modules/pinotgris'
+37 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/pinotgris']
+37 error   errno: 3,
+37 error   code: 'EACCES',
+37 error   path: '/usr/local/lib/node_modules/pinotgris',
+37 error   fstream_type: 'Directory',
+37 error   fstream_path: '/usr/local/lib/node_modules/pinotgris',
+37 error   fstream_class: 'DirWriter',
+37 error   fstream_stack:
+37 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+37 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+37 error      'Object.oncomplete (fs.js:107:15)' ] }
+38 error Please try running this command again as root/Administrator.
+39 error System Darwin 14.0.0
+40 error command "node" "/usr/local/bin/npm" "install" "/Users/alex/Arbeit/Development/JavaScript/Projekte/PinotGris" "-g"
+41 error cwd /Users/alex/Arbeit/Development/JavaScript/Spielwiese/PG
+42 error node -v v0.10.32
+43 error npm -v 1.4.28
+44 error path /usr/local/lib/node_modules/pinotgris
+45 error fstream_path /usr/local/lib/node_modules/pinotgris
+46 error fstream_type Directory
+47 error fstream_class DirWriter
+48 error code EACCES
+49 error errno 3
+50 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/pinotgris'
+51 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+51 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+51 error fstream_stack Object.oncomplete (fs.js:107:15)
+52 verbose exit [ 3, true ]
