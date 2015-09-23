@@ -19,106 +19,50 @@
 
 
 
-        var t2 = "<div>"+
-                "<ul>"+
-                "<li>"+
-                "<input  type='radio' checked name='tabs' id='tab1'>"+
-                "<label for='tab1'>Issues</label>"+
-                " <div id='tab-content1' class='tab-content animated fadeIn'>"+
-                "Content sdhsdhsdhsd" +
-                "</div>" +
-                "</li>"+
-                "<li>"+
-                "<input  type='radio' checked name='tabs' id='tab2'>"+
-                "<label for='tab2'>SRS</label>"+
-                " <div id='tab-content1' class='tab-content animated fadeIn'>"+
-                "Content ahsfdhaskdjaskldmalkdmöalksöasdbjknlsmaö," +
-                "</div>" +
-                "</li>" +
-                "</ul> " +
-                "</div>";
-
         $(document).ready(function() {
-            $('.tooltip').tooltipster({
+
+            var x  =  $('.tooltip');
+            console.log('x = ');
+            console.dir(x);
+
+          var   x = "input[value=clickeME]"; //input[value=clickeME]
+            var t2 = "<div>"+
+                   // "<button onclick=\"$(\'""+x+"\').tooltipster(\'hide\');\">Got it, thanks!</button>"
+                   "<button onclick=\"$(\'"+x+"\').tooltipster(\'hide\');\">Got it, thanks!</button>"+
+                    "<ul>"+
+                    "<li>"+
+                    "<input  type='radio' checked name='tabs' id='tab1'>"+
+                    "<label for='tab1'>Issues</label>"+
+                    " <div id='tab-content1' class='tab-content animated fadeIn'>"+
+                    "Content sdhsdhsdhsd" +
+                    "</div>" +
+                    "</li>"+
+                    "<li>"+
+                    "<input  type='radio' checked name='tabs' id='tab2'>"+
+                    "<label for='tab2'>SRS</label>"+
+                    " <div id='tab-content1' class='tab-content animated fadeIn'>"+
+                    "Content ahsfdhaskdjaskldmalkdmöalksöasdbjknlsmaö," +
+                    "</div>" +
+                    "</li>" +
+                    "</ul> " +
+                    "</div>";
+
+
+            $("input[value='clickeME']").tooltipster({
                 contentAsHTML: true,
-               // theme: 'my-custom-theme',
-                trigger : "click",
+                theme: 'my-custom-theme',
+                trigger : "hover",
                 interactive: true,
-                content: $('#pUp')
+                autoClose : false,
+                content: $(t2)
 
             });
         });
+
+
     </script>
 
-<!--
     <style type="text/css">
-
-        .tabs input[type=radio] {
-            position: absolute;
-            top: -9999px;
-            left: -9999px;
-        }
-        .tabs {
-            width: 650px;
-            float: none;
-            list-style: none;
-            position: relative;
-            padding: 0;
-            margin: 75px auto;
-        }
-        .tabs li{
-            float: left;
-        }
-        .tabs label {
-            display: block;
-            padding: 10px 20px;
-            border-radius: 2px 2px 0 0;
-            color: #08C;
-            font-size: 24px;
-            font-weight: normal;
-            background: rgba(255,255,255,0.2);
-            cursor: pointer;
-            position: relative;
-            top: 3px;
-            -webkit-transition: all 0.2s ease-in-out;
-            -moz-transition: all 0.2s ease-in-out;
-            -o-transition: all 0.2s ease-in-out;
-            transition: all 0.2s ease-in-out;
-        }
-        .tabs label:hover {
-            background: rgba(255,255,255,0.5);
-            top: 0;
-        }
-
-        [id^=tab]:checked + label {
-            background: #08C;
-            color: white;
-            top: 0;
-        }
-
-        [id^=tab]:checked ~ [id^=tab-content] {
-            display: block;
-        }
-        .tab-content{
-            z-index: 2;
-            display: none;
-            text-align: left;
-            width: 100%;
-            font-size: 20px;
-            line-height: 140%;
-
-            background: #08C;
-            padding: 5px;
-            color: white;
-            position: absolute;
-            top: 53px;
-            left: 0;
-            box-sizing: border-box;
-            -webkit-animation-duration: 0.5s;
-            -o-animation-duration: 0.5s;
-            -moz-animation-duration: 0.5s;
-            animation-duration: 0.5s;
-        }
 
         .my-custom-theme {
             border-radius: 5px;
@@ -130,19 +74,28 @@
         .my-custom-theme .tooltipster-content {
             font-family: Arial, sans-serif;
             font-size: 14px;
-            background-color: whitesmoke;
+            margin: 1em;
+        }
+
+        .my-custom-theme .tooltipster-content button {
+            margin-left: 85%;
         }
 
     </style>
-    -->
+
 
 </head>
 <body>
 
+<!--
 <div class="tooltip" style="outline: dotted; outline-color: red">
      ...... Mach misch fruchtig!!!!
 </div>
+-->
 
+<div>
+    <input type="button" value="clickeME" class="tooltip">
+</div>
 
 <div id="pUp"  class="container">
     <div class="main">
@@ -156,8 +109,8 @@
                 </div>
             </li>
             <li>
-              <input  type="radio" checked name="tabs" id="tab1">
-                <label for="tab1">tab 1</label>
+              <input  type="radio" checked name="tabs" id="tab2">
+                <label for="tab2">tab 1</label>
                 <div id="tab-content2" class="tab-content animated fadeIn">
                     "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
                 </div>
