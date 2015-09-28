@@ -1,0 +1,35 @@
+.merlotBlueprintPopUP{
+    padding: 1em;
+    border: solid;
+    border-color: red;
+    background-color: beige;
+}
+
+
+
+
+.merlotIssuesMainArticle{
+
+    height: auto;
+    margin: 0;
+    display: table;
+    width: 100%;
+
+}
+
+.merlotActorInfo {
+    background-color: orangered;
+    display: table-cell;
+}
+
+
+.merlotIssueInfo{
+    margin-left: 9em;
+    padding: 1%;
+    width: 90%;
+    background-color: greenyellow;
+    display: table-cell;
+    vertical-align: top;
+}
+
+
