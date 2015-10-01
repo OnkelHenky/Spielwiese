@@ -3,17 +3,31 @@
     border: solid;
     border-color: red;
     background-color: beige;
+    display: table;
 }
 
+.merlotBlueprintPopUP_ActionBar{
+    display: table-row;
+}
 
+.merlotBlueprintPopUP_ActionBar button{
+    padding: 1%;
+}
 
+.merlotBlueprintPopUP_ActionBar div{
+    display: table-cell;
+}
+
+.algnRight{
+    text-align: right;
+}
 
 .merlotIssuesMainArticle{
 
     height: auto;
     margin: 0;
-    display: table;
     width: 100%;
+    display: table-row;
 
 }
 
