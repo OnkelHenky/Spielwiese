@@ -4,6 +4,54 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
+<script type="application/javascript">
+
+   // "use strict";
+
+    function foo(){
+
+     //   this.a = 5;
+      //  this.b = 66;
+        var a = 5;
+        console.log(this.a);
+
+    }
+
+
+    var obj = {
+        a : 33,
+        foo: foo
+    };
+
+    var  a = 2;
+
+
+
+   console.log(obj.a);
+   console.log(obj['ggg'] || "nischts" );
+
+
+   // obj.foo();
+
+   console.log('obj.a = ' +obj.a);
+   console.log('obj.b = ' +obj.b);
+
+   foo.call(obj);
+   foo.apply(obj);
+   //foo.bind(obj);
+
+
+
+   (function(){
+
+        foo();
+
+    })();
+
+</script>
+
+
 <body>
 
 </body>
